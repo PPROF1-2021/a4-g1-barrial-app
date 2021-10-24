@@ -1,48 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
    background: url(../img/fondoSeg.jpg) no-repeat center top ;
    margin: 0;
    padding: 0;
    background-size: cover;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-attachment: fixed;
 }
 
 header{
-  margin-top: 15px;
+  margin-top: 0px;
   color: white;
   font-size: 30px;
-  
 }
-nav{
-   position: fixed ;
-   right: 0;
-}
+
 h1,p{
   color: white;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: grey;
   }
-  footer{
-    font-size: 20px;
+
+  /*  Google Maps -*/
+  .map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:30%;
+
+    position:relative;
+
+    height:0%;
+
+}
+
+.map-responsive iframe{
+  margin-left: 25%;
+  margin-right: 25%;
+  
+    left: 0;
+
+    top:0;
+    
+    height:50%;
+
+    width:50%;
+
+    position:absolute;
+
+}
+ /*Footer*/
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Establece la altura fija del pie de página */
+  height: 350px;
+}
+
+/* Pie de página más alto en pantallas pequeñas */
+@media (max-width: 34em) {
+    body {
+      margin-bottom: 500px;
     }
+    .footer {
+      height: 500px;
+    }
+}
+
+/* Estilo y color del pie de página adhesivo */
+footer {
+  padding-top: 30px;
+  padding-block-end: 15rem;
+  background-color: #17406e;
+  color: #bbb;
+  text-align: left;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+.nav-item{
+  color: white;
+}
+.list-unstyled{
+  font-size: 20px;
+}
