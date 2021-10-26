@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="description" content="Registro de usuarios de Protección Barrial APP.">
+  <meta name="keywords" content="Protección Barrial APP, seguridad, barrios, seguridad barrial, aplicación seguridad">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/registro.css">
   <title>Formulario Registro</title>
@@ -21,7 +23,6 @@
         <img src="img/logoSeguridad.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
         Protección Barrial 24hs
       </a>
-      <a class="navbar-brand" >Protección Barrial 24hs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -111,23 +112,23 @@
               <hr>
           </div>
           <div class="col-md-5">
-              <form>
-                  <fieldset class="form-group">
-                    <input type="text" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre">
-                  </fieldset>
-                  <fieldset class="form-group">
-                  <input type="text" class="form-control" id="exampleInputSurname" placeholder="Ingrese su apellido">
-                  </fieldset>
-                  <fieldset class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su E-mail">
-                  </fieldset>
-                  <fieldset class="form-group">
-                      <textarea class="form-control" id="exampleMessage" placeholder="Ingrese su Mensaje"></textarea>
-                  </fieldset>
-                  <fieldset class="form-group text-xs-right ">
-                    <button type="button" class="btn btn-dark">Enviar</button>
-                  </fieldset>
-              </form>
+            <form>
+              <fieldset class="form-group">
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre" required>
+              </fieldset>
+              <fieldset class="form-group">
+              <input type="text" class="form-control" id="exampleInputSurname" placeholder="Ingrese su apellido" required>
+              </fieldset>
+              <fieldset class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su E-mail" required>
+              </fieldset>
+              <fieldset class="form-group">
+                  <textarea class="form-control" id="exampleMessage" placeholder="Ingrese su Mensaje" required></textarea>
+              </fieldset>
+              <fieldset class="form-group text-xs-right ">
+                <input type="submit" value="Enviar"  class="btn btn-dark"></input>
+              </fieldset>
+            </form>
               
           </div>
       </div>
