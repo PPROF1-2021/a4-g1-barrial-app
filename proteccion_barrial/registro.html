@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/registro.css">
   <title>Formulario Registro</title>
-  <link rel="shortcut icon" href="img/logoSeguridad.jpeg">
+  <link rel="shortcut icon" href="img/App.gif">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
   <!-- agrego bootstrap-->
@@ -17,10 +18,6 @@
   <header>
     <!-- Menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logoSeguridad.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Protección Barrial 24hs
-      </a>
       <a class="navbar-brand" >Protección Barrial 24hs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,16 +46,17 @@
   <section class="form-register">
     <!-- Formulario-->
     <center><h4>Crea una cuenta</center></h4>
-    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-    <input class="controls" type="date" name="nacimiento" id="nacimiento" placeholder="Ingrese su Fecha de nacimiento">
-    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-    <input class="controls" type="number" name="Telefono" id="Teléfono" placeholder="Ingrese su Teléfono">
-    <input class="controls" type="text" name="dirrección" id="dirrección" placeholder="Ingrese su Dirección">
-    <input class="controls" type="text" name="Pais" id="Pais" placeholder="Ingrese su País">
-    <input class="controls" type="text" name="Provincia" id="Provincia" placeholder="Ingrese su Provincia">
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+    <input class="controls" type="date" name="nacimiento" id="nacimiento" placeholder="Ingrese su Fecha de nacimiento" required>
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña" required>
+    <input class="controls" type="number" name="Telefono" id="Teléfono" placeholder="Ingrese su Teléfono" required>
+    <input class="controls" type="text" name="dirrección" id="dirrección" placeholder="Ingrese su Dirección" required>
+    <input class="controls" type="text" name="Pais" id="Pais" placeholder="Ingrese su País" required>
+    <input class="controls" type="text" name="Provincia" id="Provincia" placeholder="Ingrese su Provincia" required>
     <input class="botons" type="submit" value="Registrar">
+    <!-- Revisar por que no pide llenar los campos requeridos al apretar el boton -->
   </section>
   <br>
  <!--footer Protección Barrial  -->
@@ -113,19 +111,19 @@
           <div class="col-md-5">
               <form>
                   <fieldset class="form-group">
-                    <input type="text" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre">
+                    <input type="text" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre" required>
                   </fieldset>
                   <fieldset class="form-group">
-                  <input type="text" class="form-control" id="exampleInputSurname" placeholder="Ingrese su apellido">
+                  <input type="text" class="form-control" id="exampleInputSurname" placeholder="Ingrese su apellido" required>
                   </fieldset>
                   <fieldset class="form-group">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su E-mail">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su E-mail" required>
                   </fieldset>
                   <fieldset class="form-group">
-                      <textarea class="form-control" id="exampleMessage" placeholder="Ingrese su Mensaje"></textarea>
+                      <textarea class="form-control" id="exampleMessage" placeholder="Ingrese su Mensaje" required></textarea>
                   </fieldset>
                   <fieldset class="form-group text-xs-right ">
-                    <button type="button" class="btn btn-dark">Enviar</button>
+                    <input type="submit" value="Enviar"  class="btn btn-dark"></input>
                   </fieldset>
               </form>
               
@@ -137,3 +135,5 @@
 
 </body>
 </html>
+
+
