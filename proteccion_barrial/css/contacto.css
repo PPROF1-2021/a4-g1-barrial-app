@@ -17,19 +17,19 @@ body {
     bottom: 0;
     width: 100%;
     /* Establece la altura fija del pie de página */
-    height: 350px;
+    height: 325px;
   }
-  
+
   /* Pie de página más alto en pantallas pequeñas */
   @media (max-width: 34em) {
       body {
         margin-bottom: 500px;
       }
       .footer {
-        height: 500px;
+        height: 350px;
       }
   }
-  
+
   /* Estilo y color del pie de página adhesivo */
   footer {
     padding-top: 30px;
@@ -37,18 +37,18 @@ body {
     background-color: #17406e;
     color: #bbb;
   }
-  
+
   footer a {
     color: #999;
     text-decoration:none;
   }
-  
+
   footer a:hover, footer a:focus {
     color: #aaa;
     text-decoration:none;
     border-bottom:1px dotted #999;
   }
-  
+
   footer .form-control {
       background-color: #1f2022;
       box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
