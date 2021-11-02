@@ -14,7 +14,7 @@ body {
 }
 
 nav{
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -35,7 +35,7 @@ li a:hover {
 }
 
 .form-register h4 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -47,14 +47,14 @@ li a:hover {
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
   font-family: 'calibri';
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 
 .form-register p {
   
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 40px;
 }
 
@@ -77,7 +77,7 @@ li a:hover {
   padding: 12px;
   color: #fff;
   margin: 16px 0;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 20px;
 }
 .form-register input[type="submit"]:hover {
@@ -92,7 +92,7 @@ li a:hover {
   bottom: 0;
   width: 100%;
   /* Establece la altura fija del pie de página */
-  height: 350px;
+  height: 325px;
 }
 
 /* Pie de página más alto en pantallas pequeñas */

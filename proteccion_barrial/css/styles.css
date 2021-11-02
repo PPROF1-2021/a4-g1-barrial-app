@@ -42,11 +42,11 @@ h1,p{
 .map-responsive iframe{
   margin-left: 25%;
   margin-right: 25%;
-  
+
     left: 0;
 
     top:0;
-    
+
     height:50%;
 
     width:50%;
@@ -61,7 +61,7 @@ h1,p{
   bottom: 0;
   width: 100%;
   /* Establece la altura fija del pie de página */
-  height: 350px;
+  height: 325px;
 }
 
 /* Pie de página más alto en pantallas pequeñas */
@@ -70,7 +70,7 @@ h1,p{
       margin-bottom: 500px;
     }
     .footer {
-      height: 500px;
+      height: 300px;
     }
 }
 
