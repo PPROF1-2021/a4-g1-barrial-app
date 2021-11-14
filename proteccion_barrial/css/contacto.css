@@ -1,15 +1,24 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background: url(../img/fondoSeg.jpg) no-repeat center top ;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-attachment: fixed;
+  background: url(../img/fondoSeg.jpg) no-repeat center top ;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-attachment: fixed;
  }
+<<<<<<< HEAD
  
  nav{
   font-size: 24px;
+=======
+ nav{
+  font-size: 30px;
+>>>>>>> 94df67974a92bc758641f76304b2260b570863f7
 }
  h1{
      color: white;

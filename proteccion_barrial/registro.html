@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+  <html lang="es"></html>
   <meta name="description" content="Registro de usuarios de Protección Barrial APP.">
   <meta name="keywords" content="Protección Barrial APP, seguridad, barrios, seguridad barrial, aplicación seguridad">
-  <meta charset="UTF-8">
   <link rel="stylesheet" href="css/registro.css">
   <title>Formulario Registro</title>
   <link rel="shortcut icon" href="img/App.gif">
@@ -15,6 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
 </head>
 <body>
   <header>
@@ -48,7 +50,9 @@
       </div>
     </nav>
   </header>
+  <!-- Formulario de registro-->
   <section class="form-register">
+<<<<<<< HEAD
     <!-- Formulario-->
     <center><h4>Crea una cuenta</center></h4>
     <form>
@@ -85,8 +89,101 @@
       <fieldset class="form-group text-xs-right ">
         <input type="submit" value="Registrar"  class="btn btn-dark"></input>
       </fieldset>
+=======
+    <form id="form" method="post" class="needs-validation" novalidate>
+      <center><h4>Crea una cuenta</center></h4>
+      <div class="form-row">
+         
+        <div class="form-group col-md-6">
+          <label for="inputNombre">Nombre</label>
+          <input type="text" class="form-control" id="inputNombre" placeholder="" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputApellido">Apellido</label>
+          <input type="text" class="form-control" id="inputApellido" placeholder="Ingresar Apellido" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputUsuario">Usuario</label>
+          <input type="text" class="form-control" id="inputUsuario" placeholder="Ingresar Usuario" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputContraseña">Contraseña</label>
+          <input type="password" class="form-control" id="inputContraseña" placeholder="Ingresar Contraseña" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+        <div class="form-group col-md-12">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+        
+      </div>
+      <div class="form-group">
+        <label for="inputDireccion">Dirección</label>
+        <input type="text" class="form-control" id="inputDireccion" placeholder="Calle 1234" required>
+        <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+      </div>
+      <div class="form-group">
+        <label for="inputFecha">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="nacimiento" placeholder="Ingresar fecha de nacimiento" required>
+        <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+      </div>
+      <div class="form-group">
+        <label for="inputNombre">Edad</label>
+        <input type="text" class="form-control" id="edad" onclick="calcularEdad()" value=" " required>
+        <div class="valid-feedback">ok </div>
+        <div class="invalid-feedback">Campo obligatorio</div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputCiudad">Ciudad</label>
+          <input type="text" class="form-control" id="inputCiudad" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputProvincia">Provincia</label>
+          <select id="inputProvincia" class="form-control" required>
+            <option selected> </option>
+            <option>Cordoba</option>
+            <option>Mendoza</option>
+            <option>Tucuman</option>
+            <option>Etc...</option>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputCp">CP </label>
+          <input type="number" class="form-control" id="inputCp" required>
+          <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck" >
+            Acepto terminos y condiciones
+          </label>
+          <div class="invalid-feedback">Acepte terminos y condiciones para poder continuar</div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+>>>>>>> 94df67974a92bc758641f76304b2260b570863f7
     </form>
   </section>
+  
   <br>
  <!--footer Protección Barrial  -->
  <footer class="footer">
@@ -106,9 +203,15 @@
                   <!--Enlaces de interes -->
                   <div class="col-6">
                       <ul class="list-unstyled">
+<<<<<<< HEAD
                         <li><a target="_blank" href="https://www.argentina.gob.ar/policia-federal-argentina">Policia Federal Argentina</a></li>
                         <li><a target="_blank" href="https://www.argentina.gob.ar/seguridad/bomberosvoluntarios">Bomberos Voluntarios Argentina</a></li>
                         <li><a target="_blank" href="https://www.argentina.gob.ar/tema/emergencias">Números de Emergencias</a></li>
+=======
+                        <li ><a href="https://www.argentina.gob.ar/policia-federal-argentina" target="blank">Policia Federal Argentina</a></li>
+                        <li ><a href="https://www.argentina.gob.ar/seguridad/bomberosvoluntarios" target="blank">Bomberos Voluntarios Argentina</a></li>
+                        <li ><a href="https://www.argentina.gob.ar/tema/emergencias" target="blank">Números de Emergencias</a></li>
+>>>>>>> 94df67974a92bc758641f76304b2260b570863f7
                       </ul>
                   </div> 
                   
@@ -150,9 +253,13 @@
       </div>
   </div>
 </footer>
+<<<<<<< HEAD
 
 <script src="js/funcionesGrupo99.js"></script>
+=======
+>>>>>>> 94df67974a92bc758641f76304b2260b570863f7
 </body>
+<script src="js/funcionesGrupo99.js"></script>
 </html>
 
 
