@@ -18,4 +18,32 @@
   }, false);
 })();
 
- 
+function ir(){
+
+  var username= 2468;
+  var password= "martin";
+
+  if(document.getElementById('usuario')== username && document.getElementById('contraseña')== password){
+  alert ("Bienvenidos a Proteccion Barrial" );
+  
+  }
+  else{
+    alert("Por favor ingresa, nombre y usuario correctos.");
+  
+  }
+  
+}
+
+function calcularEdad() {
+  var fecha = document.getElementById(nacimiento)
+  var hoy = new Date();
+  var cumpleanos = new Date(fecha);
+  var edad = parseInt(hoy.getFullYear()) - parseInt(cumpleanos.getFullYear());
+  var m = parseInt(hoy.getMonth()) - parseInt(cumpleanos.getMonth());
+
+  if (m < 0 || (m == 0 && hoy.getDate() < cumpleanos.getDate())) {
+      edad--;
+  }
+
+  document.getElementById('edad').value = edad;
+}
