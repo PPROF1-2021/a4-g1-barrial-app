@@ -17,6 +17,9 @@ header{
   color: white;
   font-size: 30px;
 }
+nav{
+  font-size: 30px;
+}
 
 h1,p{
   color: white;
@@ -40,16 +43,15 @@ h1,p{
 }
 
 .map-responsive iframe{
-  margin-left: 25%;
-  margin-right: 25%;
+  
 
     left: 0;
 
     top:0;
 
-    height:50%;
+    height:100%;
 
-    width:50%;
+    width:100%;
 
     position:absolute;
 
