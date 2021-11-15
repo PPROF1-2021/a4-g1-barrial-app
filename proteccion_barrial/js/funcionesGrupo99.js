@@ -18,4 +18,18 @@
   }, false);
 })();
 
- 
+function ir() {
+
+  var password=2468;
+  var username="Martin";
+  
+  if(document.form.password.value==password && document.form.username.value==username){
+  alert ("Bienvenidos a Proteccion Barrial" );
+  }
+  else{
+    alert("Por favor ingresa, nombre y usuario correctos.");
+  
+  }
+  
+  
+  }
