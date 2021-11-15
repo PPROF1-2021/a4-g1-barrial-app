@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -53,15 +52,12 @@
     
         <!-- Formulario-->
         <form name=form action="inicio sesion">
-        <!-- USUARIO INGRESO-->
-          <label for="username" >Usuario</label>
-          <input type="text" id="usuario" placeholder="Ingrese Usuario" required><!--Es una etiqueta de texto colocada dentro de un campo de un formulario-->
-        <!-- CONTRASEÑA INGRESO -->
-          <label for="password">Contraseña</label>
-          <input type="password" id="contraseña" placeholder="Ingrese Contraseña">
-          <input type="button"  value="Ingresar" onclick="ir()">
+        <!-- EMAIL INGRESO-->
+          <label for="username" >Dirección de email</label>
+          <input type="email" id="email" placeholder="Ingrese email" required>
+
+          <input type="button"  value="Recuperar Contraseña" onclick="validarEmail()">
           <center>
-          <a href="contraseña.html">Olvidaste la contraseña? </center</a><br>
           <a href="registro.html">Registrarse</a>
         </form>
       </div>
@@ -132,5 +128,3 @@
   <script src="js/funcionesGrupo99.js"></script>
   </body>
 </html>
-
-
