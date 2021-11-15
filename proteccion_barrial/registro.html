@@ -39,9 +39,6 @@
             <a class="nav-link" href="login.html">Ingresar</a>
           </li>
 
-         <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-         </li>
       </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Escribir aqui" aria-label="Search">
@@ -52,75 +49,37 @@
   </header>
   <!-- Formulario de registro-->
   <section class="form-register">
-<<<<<<< HEAD
-    <!-- Formulario-->
-    <center><h4>Crea una cuenta</center></h4>
-    <form>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
-      </fieldset>
-      <fieldset class="form-group">
-      <input type="date" class="form-control" id="nacimiento" placeholder="Ingrese su fecha de nacimiento" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="edad" placeholder="Edad" onclick="calcularEdad()" value=" " required>
-      </fieldset>
-      <fieldset class="form-group">
-          <input type="email" class="form-control" id="correo" placeholder="Ingrese su E-mail" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="password" class="form-control" id="=contraseña" placeholder="Ingrese su contraseña" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="number" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="provincia" placeholder="Ingrese su provincia" required>
-      </fieldset>
-      <fieldset class="form-group">
-        <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad" required>
-      </fieldset>
-      <fieldset class="form-group text-xs-right ">
-        <input type="submit" value="Registrar"  class="btn btn-dark"></input>
-      </fieldset>
-=======
     <form id="form" method="post" class="needs-validation" novalidate>
       <center><h4>Crea una cuenta</center></h4>
       <div class="form-row">
          
         <div class="form-group col-md-6">
           <label for="inputNombre">Nombre</label>
-          <input type="text" class="form-control" id="inputNombre" placeholder="" required>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresar Nombre" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputApellido">Apellido</label>
-          <input type="text" class="form-control" id="inputApellido" placeholder="Ingresar Apellido" required>
+          <input type="text" class="form-control" id="apellido" placeholder="Ingresar Apellido" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputUsuario">Usuario</label>
-          <input type="text" class="form-control" id="inputUsuario" placeholder="Ingresar Usuario" required>
+          <input type="text" class="form-control" id="usuario" placeholder="Ingresar Usuario" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputContraseña">Contraseña</label>
-          <input type="password" class="form-control" id="inputContraseña" placeholder="Ingresar Contraseña" required>
+          <input type="password" class="form-control" id="contraseña" placeholder="Ingresar Contraseña" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-12">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
@@ -128,7 +87,7 @@
       </div>
       <div class="form-group">
         <label for="inputDireccion">Dirección</label>
-        <input type="text" class="form-control" id="inputDireccion" placeholder="Calle 1234" required>
+        <input type="text" class="form-control" id="direccion" placeholder="Calle 1234" required>
         <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
       </div>
@@ -147,7 +106,7 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="inputCiudad">Ciudad</label>
-          <input type="text" class="form-control" id="inputCiudad" required>
+          <input type="text" class="form-control" id="ciudad" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
@@ -179,8 +138,7 @@
           <div class="invalid-feedback">Acepte terminos y condiciones para poder continuar</div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Registrarse</button>
->>>>>>> 94df67974a92bc758641f76304b2260b570863f7
+      <button type="submit" class="btn btn-primary" onclick="validarTamaño()">Registrarse</button>
     </form>
   </section>
   
@@ -203,15 +161,9 @@
                   <!--Enlaces de interes -->
                   <div class="col-6">
                       <ul class="list-unstyled">
-<<<<<<< HEAD
-                        <li><a target="_blank" href="https://www.argentina.gob.ar/policia-federal-argentina">Policia Federal Argentina</a></li>
-                        <li><a target="_blank" href="https://www.argentina.gob.ar/seguridad/bomberosvoluntarios">Bomberos Voluntarios Argentina</a></li>
-                        <li><a target="_blank" href="https://www.argentina.gob.ar/tema/emergencias">Números de Emergencias</a></li>
-=======
                         <li ><a href="https://www.argentina.gob.ar/policia-federal-argentina" target="blank">Policia Federal Argentina</a></li>
                         <li ><a href="https://www.argentina.gob.ar/seguridad/bomberosvoluntarios" target="blank">Bomberos Voluntarios Argentina</a></li>
                         <li ><a href="https://www.argentina.gob.ar/tema/emergencias" target="blank">Números de Emergencias</a></li>
->>>>>>> 94df67974a92bc758641f76304b2260b570863f7
                       </ul>
                   </div> 
                   
@@ -253,11 +205,6 @@
       </div>
   </div>
 </footer>
-<<<<<<< HEAD
-
-<script src="js/funcionesGrupo99.js"></script>
-=======
->>>>>>> 94df67974a92bc758641f76304b2260b570863f7
 </body>
 <script src="js/funcionesGrupo99.js"></script>
 </html>

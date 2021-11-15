@@ -1,21 +1,4 @@
 
-<<<<<<< HEAD
-
-function calcularEdad(){
-    var fecha = document.getElementById(nacimiento);
-    var hoy = new Date();
-    var cumpleanos = new Date(fecha);
-    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-    var m = hoy.getMonth() - cumpleanos.getMonth();
-/*     var campo = document.getElementById(edad)
- */
-    if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-        edad--;
-    }
-    document.getElementById('edad').value = edad;
-}
-
-=======
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -35,33 +18,53 @@ function calcularEdad(){
   }, false);
 })();
 
-function ir(){
+function ir() {
 
-  var username= 2468;
-  var password= "martin";
-
-  if(document.getElementById('usuario')== username && document.getElementById('contraseña')== password){
-  alert ("Bienvenidos a Proteccion Barrial" );
+  var password=2468;
+  var username="Martin";
   
+  if(document.getElementById('contraseña').value==password && document.getElementById('usuario').value==username){
+    alert ("Bienvenidos a Proteccion Barrial" );
   }
   else{
     alert("Por favor ingresa, nombre y usuario correctos.");
   
   }
   
+  
 }
 
 function calcularEdad() {
-  var fecha = document.getElementById(nacimiento)
+  var fecha = document.getElementById('nacimiento').value;
   var hoy = new Date();
   var cumpleanos = new Date(fecha);
-  var edad = parseInt(hoy.getFullYear()) - parseInt(cumpleanos.getFullYear());
-  var m = parseInt(hoy.getMonth()) - parseInt(cumpleanos.getMonth());
-
-  if (m < 0 || (m == 0 && hoy.getDate() < cumpleanos.getDate())) {
-      edad--;
-  }
+  var edad = hoy.getFullYear() - cumpleanos.getFullYear();
 
   document.getElementById('edad').value = edad;
 }
->>>>>>> 94df67974a92bc758641f76304b2260b570863f7
+
+
+function validarTamaño() {
+
+  var nombre = document.getElementById('nombre');
+  var apellido = document.getElementById('apellido');
+  var usuario = document.getElementById('usuario');
+  var contraseña = document.getElementById('contraseña');
+  var email = document.getElementById('email');
+  var direccion = document.getElementById('direccion');
+
+
+}
+
+function validarEmail() {
+
+  var email = document.getElementById('email').value;
+
+  if(email == ""){
+    alert("Ingrese el email de forma correcta.");
+  }else {
+    alert('Se envió un correo a su dirección de email.');
+  }
+ 
+  console.log(email)
+}
