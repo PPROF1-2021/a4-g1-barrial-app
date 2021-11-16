@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +15,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="js/funcionesGrupo99.js"></script>
   </head>
   <body>
     <header>
@@ -53,20 +51,13 @@
         <img src="img/logoSeguridad.jpeg" class="avatar" alt="Avatar Image">
     
         <!-- Formulario-->
-<<<<<<< HEAD
-        <form  action="ir">
-=======
         <form name=form action="inicio sesion">
->>>>>>> 2a89e90569367928714618c68b7b228f54b1cf5d
-        <!-- USUARIO INGRESO-->
-          <label for="username" >Usuario</label>
-          <input type="text" id="usuario" placeholder="Ingrese Usuario" required><!--Es una etiqueta de texto colocada dentro de un campo de un formulario-->
-        <!-- CONTRASEÑA INGRESO -->
-          <label for="password">Contraseña</label>
-          <input type="password" id="contraseña" placeholder="Ingrese Contraseña">
-          <input type="button"  value="Ingresar" onclick="ir()">
+        <!-- EMAIL INGRESO-->
+          <label for="username" >Dirección de email</label>
+          <input type="email" id="email" placeholder="Ingrese email" required>
+
+          <input type="button"  value="Recuperar Contraseña" onclick="validarEmail()">
           <center>
-          <a href="contraseña.html">Olvidaste la contraseña? </center</a><br>
           <a href="registro.html">Registrarse</a>
         </form>
       </div>
@@ -136,7 +127,4 @@
 
   <script src="js/funcionesGrupo99.js"></script>
   </body>
-  <script src="js/funcionesGrupo99.js"></script>
 </html>
-
-
