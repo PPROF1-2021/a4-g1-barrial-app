@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,76 +48,75 @@
   </header>
   <!-- Formulario de registro-->
   <section class="form-register">
-    <form id="form" method="post" class="needs-validation" novalidate>
+    <form id="form" action="envio-contacto.php" method="post" class="needs-validation" novalidate>
       <center><h4>Crea una cuenta</center></h4>
       <div class="form-row">
          
         <div class="form-group col-md-6">
           <label for="inputNombre">Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Ingresar Nombre" required>
+          <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresar Nombre" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputApellido">Apellido</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Ingresar Apellido" required>
+          <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Ingresar Apellido" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputUsuario">Usuario</label>
-          <input type="text" class="form-control" id="usuario" placeholder="Ingresar Usuario" required>
+          <input type="text" name="usuarioF" class="form-control" id="usuario" placeholder="Ingresar Usuario" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputContraseña">Contraseña</label>
-          <input type="password" class="form-control" id="contraseña" placeholder="Ingresar Contraseña" required>
+          <input type="password" name="contrasenia" class="form-control" id="contraseña" placeholder="Ingresar Contraseña" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
-<<<<<<< HEAD
-        <div class="form-group col-md-6">
-          <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-=======
         <div class="form-group col-md-12">
           <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Email" required>
->>>>>>> 2a89e90569367928714618c68b7b228f54b1cf5d
+          <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
-        
       </div>
       <div class="form-group">
         <label for="inputDireccion">Dirección</label>
-        <input type="text" class="form-control" id="direccion" placeholder="Calle 1234" required>
+        <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Calle 1234" required>
         <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
       </div>
       <div class="form-group">
         <label for="inputFecha">Fecha de nacimiento</label>
-        <input type="date" class="form-control" id="nacimiento" placeholder="Ingresar fecha de nacimiento" required>
+        <input type="date" name="fecha" class="form-control" id="nacimiento" placeholder="Ingresar fecha de nacimiento" required>
         <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
       </div>
       <div class="form-group">
         <label for="inputNombre">Edad</label>
-        <input type="text" class="form-control" id="edad" onclick="calcularEdad()" value=" " required>
+        <input type="text" name="edad" class="form-control" id="edad" onclick="calcularEdad()" value=" " required>
         <div class="valid-feedback">ok </div>
         <div class="invalid-feedback">Campo obligatorio</div>
+      </div>
+      <div class="form-group">
+        <label for="inputDireccion">Teléfono</label>
+        <input type="text" name="telefono" class="form-control" id="telefono" placeholder="Ingresar teléfono" required>
+        <div class="valid-feedback">ok </div>
+          <div class="invalid-feedback">Campo obligatorio</div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="inputCiudad">Ciudad</label>
-          <input type="text" class="form-control" id="ciudad" required>
+          <input type="text" name="ciudad" class="form-control" id="ciudad" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
         <div class="form-group col-md-4">
           <label for="inputProvincia">Provincia</label>
-          <select id="inputProvincia" class="form-control" required>
+          <select id="inputProvincia" name="provincia" class="form-control" required>
             <option selected> </option>
             <option>Cordoba</option>
             <option>Mendoza</option>
@@ -130,7 +128,7 @@
         </div>
         <div class="form-group col-md-4">
           <label for="inputCp">CP </label>
-          <input type="number" class="form-control" id="inputCp" required>
+          <input type="number" name="cp" class="form-control" id="inputCp" required>
           <div class="valid-feedback">ok </div>
           <div class="invalid-feedback">Campo obligatorio</div>
         </div>
@@ -214,5 +212,3 @@
 </body>
 <script src="js/funcionesGrupo99.js"></script>
 </html>
-
-
