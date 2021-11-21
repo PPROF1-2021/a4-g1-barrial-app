@@ -22,6 +22,7 @@ nav{
 li a:hover {
   background-color: grey;
 }
+
 .login-box {
   width: 320px;
   height: 420px;
@@ -98,6 +99,7 @@ li a:hover {
 .login-box a:hover {
   color: #fff;
 }
+
 /*Footer*/
 
 .footer {
@@ -151,4 +153,20 @@ footer .form-control {
 }
 .list-unstyled{
   font-size: 20px;
+}
+
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
 }
