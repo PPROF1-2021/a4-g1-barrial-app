@@ -6,9 +6,9 @@
     <link rel="shortcut icon" href="img/logoSeguridad.jpeg">
     <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
     <html lang="es"></html>
-    <meta name="description" content="Inicio de sesión de usuarios de Protección Barrial APP.">
-    <meta name="keywords" content="Protección Barrial APP, seguridad, barrios, seguridad barrial, aplicación seguridad">
-    <title>Login | Seguridad</title>
+    <meta name="description" content="Recuperación de contraseña de usuarios de Protección Barrial.">
+    <meta name="keywords" content="Protección Barrial APP, seguridad, barrios, seguridad barrial, aplicación seguridad, contraseña">
+    <title>Recuperar contraseña - Protección Barrial</title>
     <link rel="stylesheet" href="css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
@@ -35,6 +35,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Inicio </a>
             </li>
+<<<<<<< HEAD:proteccion_barrial/contraseña.html
 >>>>>>> 1ba4f50805963388d19c8168a8a293c4b7c2552c
 
 <head>
@@ -84,6 +85,35 @@
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Escribir aqui" aria-label="Search">
           <button class="btn btn-primary" type="submit">Buscar</button>
+=======
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro.html">Registrarse</a>
+            </li>
+
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Escribir aqui" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+      <div class="login-box">
+        <img src="img/logoSeguridad.jpeg" class="avatar" alt="Avatar Image">
+    
+        <!-- Formulario-->
+        <form name=form action="inicio sesion">
+        <!-- EMAIL INGRESO-->
+          <label for="email" >Dirección de email</label>
+          <input type="email" id="email" placeholder="Ingrese email" required>
+          <center>
+          <button type="submit" class="btn btn-primary" onclick="validarEmail()">Recuperar contraseña</button>
+          <a href="registro.html">Registrarse</a>
+>>>>>>> 92275adf8702c94a6259fc29d785da4c95139cfb:proteccion_barrial/contrasenia.html
         </form>
       </div>
     </nav>
@@ -118,6 +148,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
               </ul>
             </div>
+<<<<<<< HEAD:proteccion_barrial/contraseña.html
             <!--Enlaces de interes -->
             <div class="col-6">
               <ul class="list-unstyled">
@@ -128,6 +159,32 @@
                 <li><a href="https://www.argentina.gob.ar/tema/emergencias" target="blank">Números de Emergencias</a>
                 </li>
               </ul>
+=======
+            <!-- Formulario de contacto en el footer-->
+            <div class="col-md-2">
+                <h2 class="text-md-right">Contacto</h2>
+                <hr>
+            </div>
+            <div class="col-md-5">
+              <form>
+                <fieldset class="form-group">
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+                </fieldset>
+                <fieldset class="form-group">
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su E-mail" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <textarea class="form-control" id="mensaje" placeholder="Ingrese su Mensaje" required></textarea>
+                </fieldset>
+                <fieldset class="form-group text-xs-right ">
+                  <button type="submit" class="btn btn-primary" onclick="validarContacto()">Enviar</button>
+                </fieldset>
+              </form>
+                
+>>>>>>> 92275adf8702c94a6259fc29d785da4c95139cfb:proteccion_barrial/contrasenia.html
             </div>
 
           </div>

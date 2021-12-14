@@ -7,11 +7,15 @@
   <meta name="description" content="Registro de usuarios de Protección Barrial APP.">
   <meta name="keywords" content="Protección Barrial APP, seguridad, barrios, seguridad barrial, aplicación seguridad">
   <link rel="stylesheet" href="css/registro.css">
+<<<<<<< HEAD
   <title>Formulario Registro</title>
 <<<<<<< HEAD
   
 =======
 >>>>>>> 1ba4f50805963388d19c8168a8a293c4b7c2552c
+=======
+  <title>Registro - Protección Barrial</title>
+>>>>>>> 92275adf8702c94a6259fc29d785da4c95139cfb
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
   <!-- agrego bootstrap-->
@@ -40,6 +44,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="active" href="registro.html">Registrarse</a>
           </li>
 
       </ul>
@@ -146,7 +153,7 @@
           <div class="invalid-feedback">Acepte terminos y condiciones para poder continuar</div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" onclick="validarTamaño()">Registrarse</button>
+      <button type="submit" class="btn btn-primary" onclick="validarInfo()">Registrarse</button>
     </form>
   </section>
   
@@ -193,19 +200,19 @@
           <div class="col-md-5">
             <form>
               <fieldset class="form-group">
-                <input type="text" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre" required>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
               </fieldset>
               <fieldset class="form-group">
-              <input type="text" class="form-control" id="exampleInputSurname" placeholder="Ingrese su apellido" required>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
               </fieldset>
               <fieldset class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su E-mail" required>
+                  <input type="email" class="form-control" id="email" placeholder="Ingrese su E-mail" required>
               </fieldset>
               <fieldset class="form-group">
-                  <textarea class="form-control" id="exampleMessage" placeholder="Ingrese su Mensaje" required></textarea>
+                  <textarea class="form-control" id="mensaje" placeholder="Ingrese su Mensaje" required></textarea>
               </fieldset>
               <fieldset class="form-group text-xs-right ">
-                <input type="submit" value="Enviar"  class="btn btn-dark"></input>
+                <button type="submit" class="btn btn-primary" onclick="validarContacto()">Enviar</button>
               </fieldset>
             </form>
               
