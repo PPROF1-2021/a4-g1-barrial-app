@@ -18,9 +18,12 @@ nav{
   font-size: 30px;
 }
 
-/* Change the link color to #111 (black) on hover */
+#active{
+  background-color: #c58b05;
+}
+
 li a:hover {
-  background-color: grey;
+  background-color: rgb(35, 117, 248);
 }
 
 .form-register {
